@@ -1,0 +1,25 @@
+
+.ui.sidebar.menu {
+    width: 12.5% !important;
+    position: fixed !important;
+    height: 100vh !important;
+    text-align: center;
+    overflow-y: hidden !important;
+}
+
+.ui.sidebar.menu h3 {
+    padding: 16px 0 !important;
+    margin:0 !important;
+    background-color: #0084bf !important;
+}
+
+.ui.sidebar.menu h4 {
+    padding: 15px 0;
+}
+
+.ui.sidebar.menu .item:hover, .ui.sidebar.menu .item:hover.active {
+    background-color: #0084bf !important;
+}
+    
+
+

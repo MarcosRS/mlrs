@@ -1,0 +1,40 @@
+
+.link{
+	color:inherit !important;
+}
+
+.icon{
+	font-size:30px !important;
+}
+
+.icon.linkedin{
+	color: #0084bf !important;
+}
+
+.cust-nav-icon{
+	padding-bottom: 5px !important;
+}
+
+.cust-nav-icon.left{
+	text-align: left !important;
+}
+
+.cust-nav-icon.right{
+	text-align: right !important;
+}
+
+/* .mobile-menu-trigger {
+  
+} */
+
+#mobile-menu-content {
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    width: auto;
+    top: 50px;
+    text-align: center;
+    background-color: #0084bf;
+    display: none;
+    z-index: 1;
+}

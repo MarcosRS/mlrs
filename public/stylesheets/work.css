@@ -1,0 +1,27 @@
+.job-section{
+	margin: 10px 20px 20px 20px;
+}
+.job-section .head {
+    font-weight:bold;
+    text-align: center;    
+}
+.job-section .head.wsj{
+    color: #D7182A;
+
+}
+.job-section .head.law{
+    color: #830035;
+}
+.job-section .head.vir{
+    color: #cc0000;
+}
+.job-section .head.eacadd{
+    color: #272ce0;
+}
+.job-section .ui.cards{
+    padding: 1rem 0;
+}
+.job-section .ui.card{
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,58 @@
+.ui.grid.main-container{
+	margin:0 !important;
+}
+.main-container{	
+	margin: 0;
+}
+
+.main-container	.meta{
+    font-size: 1em;
+    color: rgba(0,0,0,.4);
+}
+
+.construction .credit{
+    position: fixed;
+    right: 0;	
+}
+.construction .credit a {
+    color: #fff;	
+}
+
+.site-blue{
+	background-color: #0084bf !important;
+	color:#fff !important;
+}
+
+.site-grey{
+	background-color: #767676 !important;
+	color:#fff !important;
+}
+
+.site-blue-text{
+	color: #0084bf !important;
+}
+
+.construction .credit {
+    position: fixed;
+    right: 0;
+}
+
+.construction .credit a{
+    color: #fff;	
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile-show {
+        display: inline;
+    }
+    .mobile-no-show {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .mobile-show {
+        display: none  !important;
+    }
+}
