@@ -5,7 +5,7 @@ function triggerIncludeHtml() {
         const elemId = res[i].id;
         if(!(alreadyLoaded[elemId])) {
             const htmlToLoad = res[i].getAttribute('include-html');
-            $(`#${elemId}`).load(`static/html/${htmlToLoad}.html`);
+            $(`#${elemId}`).load(`/public/html/${htmlToLoad}.html`);
             alreadyLoaded[elemId] = 1;
         }
    }
