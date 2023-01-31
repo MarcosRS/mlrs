@@ -1,3 +1,13 @@
+$( document ).ready(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let tab = 'presentations' // Default;
+    if(urlParams.has('tab')){
+        tab = urlParams.get('tab');
+    } 
+
+    triggerGoto(tab);
+});
+
 function showHideMobileMenu () {
     // $("#mobile-menu-trigger").click(function() {
         if($("#mobile-menu-content").is(':visible')) {
@@ -11,43 +21,30 @@ function showHideMobileMenu () {
 function activateGoto(){
     $('[go-to]').each(function() {
         if(this.onclick == null) {
-            this.onclick =  function() {
+            this.onclick =  function(e) {
                 var tab = this.getAttribute('go-to');
                 triggerGoto(tab);
+                updateTabQueryParam(tab)
             };
     }
     });
 }
-const mainContent = {}
-function triggerGoto(content) {
-    console.log(content)
-    if (mainContent[content]) {
-        $('#main-content').html(mainContent[content]);     
+
+function triggerGoto(tab) {
+    const html = localStorage.getItem(tab);
+    if (html) {
+        $('#main-content').html(html);     
     } else {
-        $.get(`/public/html/${content}.html`, function(response) {
-            mainContent[content] = response;
-            console.log(mainContent)
+        $.get(`./public/html/${tab}.html`, function(response) {
+            localStorage.setItem(tab, response);
             $('#main-content').html(response);
         });
     }
+    localStorage.clear;
 }
 
-
-// const res = $('[include-html]');
-// $('[go-to]').on('click',function(){ console.log('test'); return false; });
-
-// $('[go-to]').each(function() {
-//     $(this).on('click', function(e) {
-//         console.log('test');
-//     });
-// });
-
-// const res = $('go-to');
-//     for (let i=0; i<res.length; i++){
-//         const elemId = res[i].id;
-//         if(!(alreadyLoaded[elemId])) {
-//             const htmlToLoad = res[i].getAttribute('include-html');
-//             $(`#${elemId}`).load(`static/html/${htmlToLoad}.html`);
-//             alreadyLoaded[elemId] = 1;
-//         }
-//    }
+function updateTabQueryParam(tab){
+    if ('URLSearchParams' in window) {
+        window.history.replaceState(null, null,'?tab='+tab);
+    }
+}
