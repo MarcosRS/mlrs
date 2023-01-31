@@ -4,10 +4,10 @@ const app = express();
 
 app.set('port', (process.env.PORT || 4001));
 app.use(express.static(path.join(__dirname, './public')));
-app.use('/static', express.static('public'))
+app.use('/public', express.static('public'))
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'));
+  res.sendFile(path.join(__dirname, './'));
 });
 
 app.use((err, req, res, next) => {

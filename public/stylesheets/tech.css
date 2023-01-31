@@ -1,0 +1,14 @@
+#tech-container .tech-elem{
+        width: 100px;
+        display: inline-block;
+        margin: 10px;
+}	
+
+#tech-container .tech-elem .tech-text {
+    text-align: center;
+    margin-top:0px;
+}
+
+#tech-container .tech-elem .tech-img {
+    border-radius: 10px;
+}
