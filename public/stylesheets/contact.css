@@ -1,0 +1,36 @@
+.contact-container{
+	width:50%;
+	margin: 0 auto;
+	color:#000;
+	background-color:#fff;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: left;
+}
+
+.contact-container h3.contact-me {
+		text-decoration: underline;
+}
+.contact-container .icon{
+		font-size:16px !important;
+}
+.contact-container	cel{
+		float: right;
+}
+.contact-container .form{
+	text-align: left;
+}
+.contact-container .thanks{
+		text-align: center;
+		border-radius:5px;
+		color:#fff;
+		background-color:#21ba45;
+		padding: 5px;
+		margin: 0 auto;
+}
+.contact-container .btn-submit{
+    text-align: right;
+}
+.contact-container .btn-submit .icon{
+    margin: 0 5px !important;
+}

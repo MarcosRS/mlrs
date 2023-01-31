@@ -1,0 +1,10 @@
+#about-container{
+	margin: 0 10% 0 10%;
+	padding: 2% 3% 2% 4%;
+	text-align: justify;
+}
+
+#about-container .me{
+    border: 3px solid #0084bf;
+    margin-bottom: 20px;
+}

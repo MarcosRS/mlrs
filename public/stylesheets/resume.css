@@ -1,0 +1,87 @@
+.resume-container {
+    padding: 0 90px;
+}
+
+.resume-container .ui[class*="right ribbon"].label.experience1{
+    -webkit-transform: translateX(-253%);
+    transform: translateX(-253%);
+
+}
+
+.resume-container .ui[class*="right ribbon"].label.experience2{
+    -webkit-transform: translateX(-380%);
+    transform: translateX(-380%);
+}
+
+.resume-container p {
+	font-size:15px
+}
+
+.resume-container .download-section{
+	text-align: right;
+}
+
+.resume-container .download-section .pdf{
+        color:#F00;
+}
+        
+.resume-container .download-section .word{
+        color: #2B579A;
+}
+
+.resume-container .header div{
+    display: inline-block;
+}
+.resume-container .header p,h1,h2,h3,h5,h6{
+	margin-bottom: 5px; 
+}
+
+.resume-container .skills-header{
+	text-decoration: underline;
+}
+
+.resume-container .ui.grid.skills-section div{
+	padding-right: 4%;
+}
+
+.resume-container .left-section {
+    width: 50%;
+    text-align: left;
+}
+.resume-container .right-section{
+    width: 50%;
+    text-align: right;
+}
+
+.resume-container .section{
+		margin: 20px 0;
+}
+.resume-container .section .date{
+        float: right;
+        font-style: italic;
+}
+
+.resume-container .section h1,h2,h3,h5,h6{
+    display: inline-block;
+}
+
+.resume-container .section h1,h2,h3,h5,h6.entity{
+    margin-bottom: 0px; 
+}
+
+.resume-container .section .list {
+    padding:0 20px;
+}
+
+.resume-container .ui.grid.edu-section{
+		padding-top:10px;
+}
+
+.resume-container .ui.grid.edu-section .column{ 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+.resume-container .ui.grid.edu-section .doc-type{
+    padding-left:10%;
+}
+
