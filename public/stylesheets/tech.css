@@ -1,7 +1,10 @@
+#tech-container .tech-header {
+    display: block;
+}
 #tech-container .tech-elem{
-        width: 100px;
-        display: inline-block;
-        margin: 10px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
 }	
 
 #tech-container .tech-elem .tech-text {
