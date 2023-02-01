@@ -19,12 +19,17 @@ function showHideMobileMenu () {
 }
 
 function activateGoto(){
+    const isMobile = window.matchMedia("(max-width: 767px)").matches
     $('[go-to]').each(function() {
         if(this.onclick == null) {
             this.onclick =  function(e) {
                 var tab = this.getAttribute('go-to');
                 triggerGoto(tab);
                 updateTabQueryParam(tab)
+                
+                if(isMobile) { //Closing Menu on Mobile
+                    showHideMobileMenu();
+                }
             };
     }
     });
